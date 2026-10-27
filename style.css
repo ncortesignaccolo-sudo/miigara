@@ -5,7 +5,7 @@
   --bg-color: #0b0f19;          /* Azul noche profundo */
   --card-bg: #161f33;           /* Azul carbón para las tarjetas */
   --card-border: #2a3754;       /* Borde suave de contraste */
-  --accent-gold: #f3d088;       /* Oro cálido iluminado */
+  --accent-gold: #f3d088;       /* Oro cálido e iluminado */
   --accent-rose: #f0a8b8;       /* Oro rosa suave */
   --text-main: #f8fafc;         /* Blanco nieve para lectura cómoda */
   --text-muted: #94a3b8;        /* Gris claro para textos secundarios */
@@ -140,7 +140,7 @@ body {
 /* Barra de Progreso */
 .progress-section {
   max-width: 500px;
-  margin: 25px auto 15px auto;
+  margin: 25px auto 10px auto;
 }
 
 .progress-info {
@@ -169,57 +169,6 @@ body {
   background: linear-gradient(90deg, var(--accent-rose), var(--accent-gold));
   transition: width 0.5s ease;
   border-radius: 10px;
-}
-
-/* Switch Dev */
-.admin-panel {
-  margin-top: 20px;
-}
-
-.switch-container {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.switch-container input {
-  display: none;
-}
-
-.switch-slider {
-  width: 40px;
-  height: 22px;
-  background-color: #334155;
-  border-radius: 20px;
-  position: relative;
-  transition: 0.3s;
-}
-
-.switch-slider::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: white;
-  top: 3px;
-  left: 3px;
-  transition: 0.3s;
-}
-
-.switch-container input:checked + .switch-slider {
-  background-color: var(--accent-gold);
-}
-
-.switch-container input:checked + .switch-slider::before {
-  transform: translateX(18px);
-}
-
-.switch-label {
-  font-size: 13px;
-  color: var(--text-muted);
 }
 
 /* Grid de Capítulos */
